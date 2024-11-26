@@ -22,6 +22,7 @@
   --switch-bg-url: url(./Assets/sun-icon.svg);
 }
 body {
+  height: 100vh;
   background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-position: top center;
@@ -127,4 +128,12 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+@media (min-width: 700px) {
+  :root {
+    --bg.url: url(./Assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./Assets/bg-desktop-light.jpg);
+  }
 }
